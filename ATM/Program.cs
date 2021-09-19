@@ -1,4 +1,5 @@
 ﻿using System;
+using WeatherUtilities = WeatherUtilities.WeatherUtilities;
 
 namespace ATM
 {
@@ -6,7 +7,7 @@ namespace ATM
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            WeatherUtilities.Report("Soya", 43, 65);
         }
     }
 }

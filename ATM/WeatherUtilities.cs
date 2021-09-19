@@ -5,18 +5,17 @@ namespace WeatherUtilities
 
         class WeatherUtilities
         {
-            static float FahrenheightToCelsius(float temperatureFahrenheight)
+            static public float FahrenheightToCelsius(float temperatureFahrenheight)
             {
             //infering
             return (temperatureFahrenheight - 32) / 1.8f;
                 //here 
             }
 
-            static float CelsiusToFahrenheight(float temperatureCelcius)
+            static public float CelsiusToFahrenheight(float temperatureCelcius)
             {
-                //infering
-                var temperatureFahrenheight = temperatureCelcius * 1.8f + 32;
-                return temperatureFahrenheight;
+            //infering
+            return temperatureCelcius * 1.8f + 32;
                 //here 
             }
 
@@ -29,11 +28,11 @@ namespace WeatherUtilities
                 //here 
             }
 
-            static void Report(string location, float temperatureCelicius, float humidity)
+            static public void Report(string location, float temperatureCelicius, float humidity)
             {
             //infering
             var temperatureFahrenheight = CelsiusToFahrenheight(temperatureCelicius);
-            Console.WriteLine("Comfort Index for " + location + ": " + ComfortIndex(temperatureFahrenheight, humidity));
+            Console.WriteLine($"Comfort Index for {location}: {ComfortIndex(temperatureFahrenheight, humidity)}");
                 //here 
             }
 
