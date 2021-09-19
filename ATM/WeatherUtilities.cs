@@ -7,9 +7,8 @@ namespace WeatherUtilities
         {
             static float FahrenheightToCelsius(float temperatureFahrenheight)
             {
-                //infering
-                var temperatureCelsius = (temperatureFahrenheight - 32) / 1.8f;
-                return temperatureCelsius;
+            //infering
+            return (temperatureFahrenheight - 32) / 1.8f;
                 //here 
             }
 
